@@ -3,12 +3,12 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 .image-container {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    filter: brightness(30%);
 }
 
 .image-container img {
@@ -18,18 +18,68 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-   
+    filter: brightness(30%);
+    z-index: 1; /* Az img z-index értéke biztosítja, hogy az img előtérben legyen a gradienttel szemben */
 }
-.kep_szoveg{
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* A gradient terjedése csak a bal oldalon */
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Fekete átlátszó gradient */
+    z-index: 2; /* A gradient az img mögött van, de az img előtt a filter alkalmazásával */
+}
+
+.kep_szoveg {
+    position: absolute;
+    top: 45%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 58px;
+    color: white;
+    font-weight: bold;
+    font-family: serif;
+    z-index: 3;
+}
+.kep_szoveg2 {
+    position: absolute;
+    top: 52%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-size: 58px;
+    color: white;
+    font-weight: bold;
+    font-family: serif;
+    z-index: 3;
+}
+.welcome{
 position: absolute;
-top: 35%; 
-left: 25%; 
+top: 38%;
+left: 10.5%;
 transform: translate(-50%, -50%);
-text-align: center; 
-font-size: 58px; /* Szöveg mérete */
+text-align: left;
+font-size: 20px;
 color: white;
-font-style: bold;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+font-family: sans-serif;
+z-index: 3;
 
 }
+.leiras{
+ position: absolute;
+top: 60%;
+left: 17.5%;
+transform: translate(-50%, -50%);
+text-align: left;
+font-size: 17px;
+color: white;
+font-family: sans-serif;
+z-index: 3;
+}
+
 

@@ -81,7 +81,11 @@
         <img src="img/dd.jpeg" alt="kep">
         
     </div>
-    <div class="kep_szoveg">Webfejlesztés és <br>az üzleti stratégia</div>
+    <div class="welcome">Ismerkedj meg a</div>
+    <div class="kep_szoveg">Webfejlesztés és az</div>
+    <div class="kep_szoveg2">üzleti stratégia összefonódásával</div>
+    <div class="leiras">A webfejlesztés és az üzleti élet érdekességei.</div>
+    
 <p></p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
