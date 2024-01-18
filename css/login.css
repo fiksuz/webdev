@@ -1,0 +1,21 @@
+body{
+    background: linear-gradient(270deg, #8b8b8bae 0%, #000000df 80%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    width: 360px;
+    height: 420px;
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}

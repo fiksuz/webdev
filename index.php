@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <title>WebDev</title>
     <meta charset="UTF-8">
@@ -8,23 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
    <style>
-   .navbar-custom {
-    background-color: #123c4a;
-}
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text{
-  color: white;
-  
-}
-.navbar-custom .navbar-brand,
-.navbar-custom .nav-link {
-    color: white;
-}
-.navbar-custom .btn {
-    color: white;
-    background-color: #11769b; 
-    border-color: #11769b; 
-}
+   
 
 </style>
 </head>
@@ -62,11 +46,11 @@
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
-                <form class= "d-flex">
-                <button class="btn">Bejelentkezés</button>
-                </form>
+                
+    <a href="Belepes/belepes.php" class="btn_bejelentkezes">Bejelentkezés</a>
+
                 <form class= "d-flex ml-auto">
-    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="margin-right: 5px;">
     <button class="btn btn-outline-success" type="submit">Search</button>
 </form>
 
@@ -81,6 +65,9 @@
         <img src="img/dd.jpeg" alt="kep">
         
     </div>
+    <button class="btn2">
+  Ingyenes hónap megkezdése
+</button>
     <div class="welcome">Ismerkedj meg a</div>
     <div class="kep_szoveg">Webfejlesztés és az</div>
     <div class="kep_szoveg2">üzleti stratégia összefonódásával</div>
